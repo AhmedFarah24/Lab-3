@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Neighborhood Listing Contract",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "$ref": "#/definitions/property"
+  },
+  "definitions": {
+    "sponsor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sponsor_id",
+        "business_name",
+        "category"
+      ],
+      "properties": {
+        "sponsor_id": {
+          "type": "string",
+          "pattern": "^SP-[0-9]{3}$"
+        },
+        "business_name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "food",
+            "retail",
+            "services",
+            "other"
+          ]
+        }
+      }
+    },
+    "property": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "property_id",
+        "street_address",
+        "city",
+        "state",
+        "zip_code",
+        "price",
+        "bedrooms",
+        "bathrooms",
+        "square_feet",
+        "amenities",
+        "local_sponsors"
+      ],
+      "properties": {
+        "property_id": {
+          "type": "string",
+          "pattern": "^PROP-[0-9]{3}$"
+        },
+        "street_address": {
+          "type": "string",
+          "minLength": 5
+        },
+        "city": {
+          "type": "string",
+          "minLength": 2
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "CA"
+          ]
+        },
+        "zip_code": {
+          "type": "string",
+          "pattern": "^[0-9]{5}$"
+        },
+        "price": {
+          "type": "number",
+          "minimum": 0
+        },
+        "bedrooms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bathrooms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "square_feet": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "amenities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "parking",
+              "laundry",
+              "balcony",
+              "yard",
+              "air_conditioning"
+            ]
+          }
+        },
+        "local_sponsors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/sponsor"
+          }
+        }
+      }
+    }
+  }
+}
