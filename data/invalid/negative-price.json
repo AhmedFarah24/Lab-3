@@ -1,0 +1,112 @@
+[
+  {
+    "property_id": "PROP-001",
+    "street_address": "110 Example Avenue",
+    "city": "Torrance",
+    "state": "CA",
+    "zip_code": "90501",
+    "price": -5,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "square_feet": 680,
+    "amenities": [
+      "parking",
+      "laundry"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SP-001",
+        "business_name": "Example Neighborhood Cafe",
+        "category": "food"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-002",
+    "street_address": "125 Example Avenue",
+    "city": "Torrance",
+    "state": "CA",
+    "zip_code": "90501",
+    "price": 2275,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "square_feet": 810,
+    "amenities": [
+      "parking",
+      "laundry"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SP-001",
+        "business_name": "Example Neighborhood Cafe",
+        "category": "food"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-003",
+    "street_address": "140 Example Avenue",
+    "city": "Torrance",
+    "state": "CA",
+    "zip_code": "90501",
+    "price": 2450,
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "square_feet": 940,
+    "amenities": [
+      "parking",
+      "laundry"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SP-001",
+        "business_name": "Example Neighborhood Cafe",
+        "category": "food"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-004",
+    "street_address": "155 Example Avenue",
+    "city": "Torrance",
+    "state": "CA",
+    "zip_code": "90501",
+    "price": 2625,
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "square_feet": 1070,
+    "amenities": [
+      "parking",
+      "laundry"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SP-001",
+        "business_name": "Example Neighborhood Cafe",
+        "category": "food"
+      }
+    ]
+  },
+  {
+    "property_id": "PROP-005",
+    "street_address": "170 Example Avenue",
+    "city": "Torrance",
+    "state": "CA",
+    "zip_code": "90501",
+    "price": 2800,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "square_feet": 1200,
+    "amenities": [
+      "parking",
+      "laundry"
+    ],
+    "local_sponsors": [
+      {
+        "sponsor_id": "SP-001",
+        "business_name": "Example Neighborhood Cafe",
+        "category": "food"
+      }
+    ]
+  }
+]
