@@ -1,0 +1,1 @@
+These five records are synthetic fixtures generated for the lab. They are **not** a captured Google AI Studio response. Save the actual output of your own AI Studio experiment in a separate clearly named file after checking it contains no personal information.
