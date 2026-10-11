@@ -1,0 +1,17 @@
+name: Lab 3 checks
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
+      - run: npm run lab3:validate
+      - run: npm run lab3:test
+      - run: npm run lint
+      - run: npm run build
